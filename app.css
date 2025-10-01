@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding: 0;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.page {
+  max-width: 960px;
+}
+.logo {
+  line-height: 70px;
+  font-size: 0;
+  padding: 0;
+  display: inline-block;
+  color: var(--bs-navbar-brand-color);
+}

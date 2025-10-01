@@ -13,11 +13,12 @@
   padding: 0;
 }
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
+  max-width: 100%;
 }
 .page {
-  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
   line-height: 70px;
@@ -25,4 +26,15 @@
   padding: 0;
   display: inline-block;
   color: var(--bs-navbar-brand-color);
+}
+.page-links a {
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+.page-links {
+  display: flex;
+  gap: 20px;
+}
+.icons li {
+  display: inline-block;
 }

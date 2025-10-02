@@ -38,3 +38,280 @@
 .icons li {
   display: inline-block;
 }
+.title {
+  font-size: 42px !important;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  font-family: "Roboto Slab", serif;
+}
+.changing-words {
+  display: inline-block;
+  position: relative;
+  color: black;
+  min-width: 350px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.changing-words::before {
+  content: "Business";
+  animation: typewriter 16s steps(15) infinite;
+}
+
+.word {
+  display: none;
+}
+@keyframes typewriter {
+  0%,
+  5% {
+    content: "";
+  }
+  6% {
+    content: "B";
+  }
+  7% {
+    content: "Bu";
+  }
+  8% {
+    content: "Bus";
+  }
+  9% {
+    content: "Busi";
+  }
+  10% {
+    content: "Busin";
+  }
+  11% {
+    content: "Busine";
+  }
+  12% {
+    content: "Busines";
+  }
+  13% {
+    content: "Business";
+  }
+  13%,
+  18% {
+    content: "Business";
+  }
+  19% {
+    content: "Busines";
+  }
+  20% {
+    content: "Busine";
+  }
+  21% {
+    content: "Busin";
+  }
+  22% {
+    content: "Busi";
+  }
+  23% {
+    content: "Bus";
+  }
+  24% {
+    content: "Bu";
+  }
+  25% {
+    content: "B";
+  }
+
+  26%,
+  28% {
+    content: "";
+  }
+  29% {
+    content: "S";
+  }
+  30% {
+    content: "St";
+  }
+  31% {
+    content: "Sta";
+  }
+  32% {
+    content: "Star";
+  }
+  33% {
+    content: "Start";
+  }
+  34% {
+    content: "Startu";
+  }
+  35% {
+    content: "Startup";
+  }
+  36% {
+    content: "Startups";
+  }
+  36%,
+  43% {
+    content: "Startups";
+  }
+  44% {
+    content: "Startup";
+  }
+  45% {
+    content: "Startu";
+  }
+  46% {
+    content: "Start";
+  }
+  47% {
+    content: "Star";
+  }
+  48% {
+    content: "Sta";
+  }
+  49% {
+    content: "St";
+  }
+  50% {
+    content: "S";
+  }
+
+  51%,
+  53% {
+    content: "";
+  }
+  54% {
+    content: "D";
+  }
+  55% {
+    content: "Di";
+  }
+  56% {
+    content: "Dig";
+  }
+  57% {
+    content: "Digi";
+  }
+  58% {
+    content: "Digit";
+  }
+  59% {
+    content: "Digita";
+  }
+  60% {
+    content: "Digital";
+  }
+  61% {
+    content: "Digital ";
+  }
+  62% {
+    content: "Digital A";
+  }
+  63% {
+    content: "Digital Ag";
+  }
+  64% {
+    content: "Digital Age";
+  }
+  65% {
+    content: "Digital Agen";
+  }
+  66% {
+    content: "Digital Agenc";
+  }
+  67% {
+    content: "Digital Agency";
+  }
+  67%,
+  72% {
+    content: "Digital Agency";
+  }
+  73% {
+    content: "Digital Agenc";
+  }
+  74% {
+    content: "Digital Agen";
+  }
+  75% {
+    content: "Digital Age";
+  }
+  76% {
+    content: "Digital Ag";
+  }
+  77% {
+    content: "Digital A";
+  }
+  78% {
+    content: "Digital";
+  }
+  79% {
+    content: "Digita";
+  }
+  80% {
+    content: "Digit";
+  }
+  81% {
+    content: "Digi";
+  }
+  82% {
+    content: "Dig";
+  }
+  83% {
+    content: "Di";
+  }
+  84% {
+    content: "D";
+  }
+
+  85%,
+  87% {
+    content: "";
+  }
+  88% {
+    content: "M";
+  }
+  89% {
+    content: "Ma";
+  }
+  90% {
+    content: "Mar";
+  }
+  91% {
+    content: "Mark";
+  }
+  92% {
+    content: "Marke";
+  }
+  93% {
+    content: "Market";
+  }
+  94% {
+    content: "Marketi";
+  }
+  95% {
+    content: "Marketin";
+  }
+  96% {
+    content: "Marketing";
+  }
+  96%,
+  100% {
+    content: "Marketing";
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .changing-words {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .changing-words {
+    min-width: 200px;
+  }
+}

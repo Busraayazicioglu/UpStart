@@ -5,16 +5,32 @@
   list-style: none;
 }
 .menu {
-  position: fixed;
+  background: url(bg_img);
+  padding: 260px 0;
+  background-size: cover !important;
+  align-self: center;
+  position: relative;
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    padding: 0;
+  }
+}
+.opacity {
+  opacity: 0.9;
+  background-color: rgba(22, 28, 45, 0.75);
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
-  padding: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
-.navbar-container {
-  max-width: 100%;
-}
+
 .page {
   display: flex;
   justify-content: space-between;
@@ -25,7 +41,6 @@
   font-size: 0;
   padding: 0;
   display: inline-block;
-  color: var(--bs-navbar-brand-color);
 }
 .page-links a {
   text-decoration: none;
@@ -44,12 +59,13 @@
   line-height: 1.5;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+
   font-family: "Roboto Slab", serif;
 }
 .changing-words {
   display: inline-block;
   position: relative;
-  color: black;
+  color: #fff;
   min-width: 350px;
   text-align: left;
   vertical-align: bottom;
@@ -295,23 +311,10 @@
     content: "Marketing";
   }
 }
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .changing-words {
-    min-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .changing-words {
-    min-width: 200px;
-  }
+.text {
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  max-width: 600px;
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.5) !important;
 }

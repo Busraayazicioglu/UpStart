@@ -630,7 +630,7 @@
 .timeline-item {
   text-align: right;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .image::before {
@@ -680,7 +680,7 @@
 .development-content-header {
   margin-left: 24px;
   transition: all 0.2s ease;
-  text-align: right;
+  text-align: left;
 }
 .timeline-content-title {
   transition: all 0.2s ease;

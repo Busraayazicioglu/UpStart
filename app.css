@@ -857,8 +857,7 @@
   position: relative;
 }
 .plans-container {
-  max-width: 960px;
-  width: 100%;
+  max-width: 100%;
 }
 .plans-header {
   position: relative;
@@ -972,4 +971,27 @@
   border-radius: 6px;
   margin-top: 1.5rem;
   text-decoration: none;
+}
+.team-image-container {
+  max-width: 100%;
+}
+.team-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-img1 {
+  max-width: 100%;
+
+  height: auto;
+  position: relative;
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+  border: none;
+  text-align: center;
+  box-shadow: 0 5px 13px rgba(36, 39, 44, 0.2);
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
 }

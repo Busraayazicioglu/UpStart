@@ -392,7 +392,7 @@
 }
 .about-icon i {
   height: 75px;
-  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15) !important;
+  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
   width: 75px;
   font-size: 25px;
   display: inline-flex;
@@ -696,4 +696,280 @@
   --bs-text-opacity: 1;
   margin-top: 1rem;
   margin-bottom: 0;
+}
+.portfolio {
+  background-color: #f8f9fc;
+  padding: 100px 0;
+  position: relative;
+  --bs-bg-opacity: 1;
+}
+.portfolio-container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.portfolio-header {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.portfolio-title {
+  font-weight: 600;
+  color: #ff5714;
+  --bs-text-opacity: 1;
+  font-size: 15px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.portfolio-inner-title {
+  letter-spacing: 0.5px;
+  font-size: 28px;
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.portfolio-text {
+  color: #8492a6;
+  max-width: 600px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.6;
+}
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-image img {
+  border-radius: 5px;
+  border: 0;
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.dark {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  transition: all 0.5s ease;
+  background-color: #24272c;
+  --bs-bg-opacity: 1;
+}
+.dark-content {
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.img-content {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 0;
+}
+.text-title {
+  transition: all 0.5s ease;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity));
+  font-size: 15px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.text-title a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.light-text {
+  color: #f8f9fc;
+  --bs-text-opacity: 1;
+  margin-bottom: 0;
+  line-height: 1.6;
+  margin-top: 0;
+}
+.icon {
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+.web-project {
+  background-image: url(section_bg.png);
+  padding: 100px 0;
+  position: relative;
+  background-size: cover;
+}
+.web-opacity {
+  background-color: rgba(22, 28, 45, 0.75);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.web-container {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.web-header {
+  position: relative;
+  text-align: center;
+}
+.web-title {
+  letter-spacing: 0.5px;
+  font-size: 28px;
+  color: #f8f9fc;
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 0;
+}
+.plans {
+  padding: 100px 0;
+  position: relative;
+}
+.plans-container {
+  max-width: 960px;
+  width: 100%;
+}
+.plans-header {
+  position: relative;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.plans-title {
+  font-weight: 600;
+  color: #ff5714;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.plans-inner-title {
+  letter-spacing: 0.5px;
+  font-size: 28px;
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 0;
+}
+.plans-box-container {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+}
+.plans-box {
+  position: relative;
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fc;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  width: 320px;
+  height: 400px;
+}
+.plans-box-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.price {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.dollar {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.num {
+  font-size: 42px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.end {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  align-self: flex-end;
+  margin-top: 0;
+}
+.box-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-top: 0;
+}
+.box-list-text {
+  color: #8492a6;
+  margin-bottom: 0.5rem;
+}
+.box-list-icon {
+  font-size: 18px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.plans-button {
+  background-color: rgba(255, 87, 20, 0.1);
+  border: 1px solid rgba(255, 87, 20, 0.1);
+  color: #ff5714;
+  box-shadow: 0 3px 5px 0 rgba(255, 87, 20, 0.1);
+  padding: 8px 20px;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  text-decoration: none;
 }

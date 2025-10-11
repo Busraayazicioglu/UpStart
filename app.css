@@ -972,20 +972,26 @@
   margin-top: 1.5rem;
   text-decoration: none;
 }
-.team-image-container {
-  max-width: 100%;
-}
-.team-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.team-img1 {
-  max-width: 100%;
-
-  height: auto;
+.team {
+  background-color: #f8f9fc;
+  padding: 100px 0;
   position: relative;
-  padding-top: 0.5rem;
+}
+.team-container {
+  max-width: 100%;
+}
+.team-img-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  gap: 15px;
+}
+
+.team-img {
+  position: relative;
+
   margin-top: 1.5rem;
   border: none;
   text-align: center;
@@ -994,4 +1000,116 @@
   margin-right: auto;
   margin-left: auto;
   display: inline-block;
+
+  overflow: hidden;
+}
+.team-img img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: middle;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background: linear-gradient(
+    transparent 0%,
+    transparent 25%,
+    transparent 35%,
+    rgba(22, 28, 45, 0.9) 100%
+  );
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.social-media {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  transform: translate(-50%, -50%); /* Ortalamak için */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  gap: 15px;
+}
+.social-media-link {
+  margin-bottom: 0.25rem;
+  opacity: 0;
+}
+.link-button {
+  box-shadow: rgba(255, 87, 20, 0.1) 0px 3px 5px 0px;
+  background-color: rgb(255, 87, 20) !important;
+  color: rgb(255, 255, 255) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: rgb(255, 87, 20) !important;
+  border-image: initial !important;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  border-radius: 30px;
+}
+.link-button i {
+  height: 16px;
+  width: 16px;
+  stroke-width: 1.8;
+}
+/* Karartma katmanının belirmesi için */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Resmin zoom yapması için */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Sosyal medya ikonlarının aşağıdan yukarı gelmesi ve belirmesi için */
+@keyframes slideUpFadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.team-img:hover img {
+  /* animasyon-adı | süre | hız-eğrisi | dolgu-modu */
+  animation: zoomIn 0.4s ease forwards;
+}
+
+.team-img:hover .overlay {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.team-img:hover .social-media-link {
+  /* Animasyon bittiğinde son halinde kalması için 'forwards' kullanılır */
+  animation: slideUpFadeIn 0.4s ease forwards;
+}
+.team-img:hover .img-text {
+  animation: slideUpFadeIn 0.4s ease forwards;
+}
+.img-text {
+  background-color: #f8f9fc;
+  opacity: 0;
+  overflow: hidden;
 }

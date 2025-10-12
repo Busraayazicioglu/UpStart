@@ -1169,3 +1169,9 @@
   width: 100%;
   border-radius: 8px;
 }
+.box-title:hover {
+  color: #ff5714;
+}
+.box-btn:hover {
+  color: #ff5714;
+}

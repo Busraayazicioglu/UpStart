@@ -534,6 +534,7 @@
 }
 .box-icon {
   text-align: center;
+  padding-left: 20px;
 }
 .box-icon i {
   background: rgba(255, 87, 20, 0.1);
@@ -549,6 +550,8 @@
 .box-content {
   padding-top: 0.5rem;
   margin-top: 1.5rem;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .box-title {
   transition: all 0.5s ease;
@@ -1006,7 +1009,6 @@
 .team-img img {
   max-width: 100%;
   height: auto;
-
   vertical-align: middle;
 }
 .overlay {
@@ -1107,9 +1109,63 @@
 }
 .team-img:hover .img-text {
   animation: slideUpFadeIn 0.4s ease forwards;
+  display: block;
 }
 .img-text {
-  background-color: #f8f9fc;
   opacity: 0;
   overflow: hidden;
+  display: none;
+  background-color: #f8f9fc;
+}
+.bottom-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 270px;
+}
+.bottom-header {
+  text-align: center;
+}
+.bottom-title {
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}
+.social-logo {
+  max-width: 100%;
+}
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  margin-top: 50px;
+}
+.img-logo img {
+  width: 80px;
+  height: 80px;
+}
+.news {
+  padding: 100px 0;
+  position: relative;
+}
+.news-container {
+  max-width: 100%;
+}
+.news-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 230px;
+  margin-right: 230px;
+}
+.news-image {
+  box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 8px;
+}
+.news-image img {
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
 }

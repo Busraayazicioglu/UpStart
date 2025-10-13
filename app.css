@@ -1267,11 +1267,13 @@
 }
 .footer {
   padding: 30px 0;
-
   max-width: 100%;
 }
 .footer-header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
 }
 
 .social-links {
@@ -1293,4 +1295,18 @@
   position: relative;
   border-radius: 5px;
   text-decoration: none;
+}
+.back-to-top {
+  position: fixed;
+  z-index: 99;
+  bottom: 30px;
+  right: 30px;
+  transition: all 0.5s ease;
+  height: 36px;
+  width: 36px;
+  line-height: 34px;
+  text-align: center;
+  background: #ff5714;
+  color: #fff !important;
+  border-radius: 50%;
 }

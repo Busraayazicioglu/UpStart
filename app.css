@@ -408,6 +408,7 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  text-decoration: none;
 }
 .play-btn i {
   -webkit-text-stroke: 2px #ff5714;
@@ -817,6 +818,7 @@
   transition: all 0.5s ease;
   text-align: center;
 }
+
 .web-project {
   background-image: url(section_bg.png);
   padding: 100px 0;
@@ -900,7 +902,6 @@
   box-shadow: 0 0 3px rgba(36, 39, 44, 0.15);
   border: none;
   border-radius: 5px;
-  background-color: #f8f9fc;
   padding-top: 3rem;
   padding-bottom: 3rem;
   padding-right: 1.5rem;
@@ -974,6 +975,10 @@
   border-radius: 6px;
   margin-top: 1.5rem;
   text-decoration: none;
+}
+.plans-button:hover {
+  background-color: #ff5714;
+  color: #fff;
 }
 .team {
   background-color: #f8f9fc;
